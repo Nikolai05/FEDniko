@@ -1,0 +1,51 @@
+:root {
+	--colorbackground: white;
+	--colortitlebalk: black;
+	--colorlivebalk: yellow;
+}
+
+
+
+body {
+	background-color: var(--colorbackground);
+}
+
+header {
+}
+
+h1 {
+	color: gold;
+	font-size: 1.5em;
+}
+
+section {
+	background-color: var(--colortitlebalk);
+	display: flex;
+}
+
+nav {
+}
+
+nav  ul{
+	display: flex;
+}
+
+.icon {
+	height: 2em;
+	width: 2em;
+}
+
+.icon img{
+	width: 100%;
+    height: auto;
+}
+
+button:first-of-type{
+	width: 2em;
+	height: 2em;
+}
+
+main a{
+	background-color: var(--colorlivebalk);
+}
+
