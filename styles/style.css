@@ -1,3 +1,5 @@
+/* custom properties */
+
 :root {
 	--colorbackground: white;
 	--colortitlebalk: black;
@@ -5,30 +7,11 @@
 	--colortitlearound: red;
 }
 
-
+/* Styling voor hele body */
 
 body {
 	background-color: var(--colorbackground);
 	margin: 0;
-}
-
-
-/* header */
-
-header {
-	display: flex;
-	flex-direction:column;
-}
-
-header nav:nth-of-type(1){
-	order: -1;
-}
-
-h1 {
-	font-family: ;
-	color: var(--colorlivebalk);
-	font-size: 1.5em;
-	text-transform: uppercase;
 }
 
 a {
@@ -36,45 +19,9 @@ a {
 	color: inherit;
 }
 
-em {
-	font-variant: normal;
-	color: var(--colortitlearound);
-	text-transform: uppercase;
-}
+/* alle navigatie (goed naakijken) */
 
-section {
-	background-color: var(--colortitlebalk);
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-}
-
-section h1::before, section h1::after {
-	margin-left: 0.1em;
-	margin-right: 0.1em;
-	content: "/";
-	color: var(--colortitlearound);
-}
-
-nav:first-of-type{
-	display: flex;
-	align-items: center;
-	gap: 1em;
-}
-
-nav:first-of-type a:hover{
-	text-decoration: underline;
-}
-
-nav:first-of-type h2{
-	font-size: 1em;
-}
-
-nav:nth-of-type(3) ul{
-	list-style: none;
-}
-
-nav  ul{
+nav ul {
 	display: flex;
 	text-decoration: none;
 	justify-content: space-between;
@@ -84,25 +31,117 @@ nav  ul{
 	padding: 0;
 }
 
-header section a {
+
+
+
+
+/**********/
+/* header */
+/**********/
+
+header {
+	display: flex;
+	flex-direction:column;
+}
+
+/* header>section */
+
+header section nav ul{
+	display: block;
+	margin-top: 7em;
+	position: fixed;
+	inset: 0;
+	transform: translateX(-100%);
+	list-style: none;
+}
+
+header section nav ul.openMenu {
+	transform: translateX(0);
+}
+
+/* header>section>div */
+
+header section div {
+	z-index: 100;
+	background-color: var(--colortitlebalk);
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+header section div a:nth-of-type(2) {
 	height: 2em;
 	width: 2em;
 }
 
-header section a img{
-	width: 100%;
-    height: auto; 
+header section div a img {
+	width: 3em;
+    height: 3em; 
 }
 
-button:first-of-type{
-	width: 2em;
-	height: 2em;
+header div button {
 	order: -1;
+	border-style: none;
+	width: 3.5em;
+	height: 3.5em;
+    background-image:url(../images/menuknop.PNG);
 }
 
-/* main */
+/* Titel pagina */
 
-main a h2{
+h1 {
+	color: var(--colorlivebalk);
+	font-size: 1.5em;
+	text-transform: uppercase;
+}
+
+em {
+	font-variant: normal;
+	color: var(--colortitlearound);
+	text-transform: uppercase;
+}
+
+section h1::before, section h1::after {
+	margin-left: 0.1em;
+	margin-right: 0.1em;
+	content: "/";
+	color: var(--colortitlearound);
+}
+
+
+/* Navigatie buiten section */
+
+header > nav:first-of-type{
+	order: -1;
+	z-index: 100;
+	position: relative;
+	display: flex;
+	align-items: center;
+	gap: 1em;
+}
+
+header > nav:first-of-type a:hover {
+	text-decoration: underline;
+}
+
+header > nav:first-of-type h2 {
+	font-size: 1em;
+}
+
+header > nav:nth-of-type(3) ul {
+	list-style: none;
+}
+
+
+
+/********************/
+/* main */
+/********************/
+
+
+
+main a h2 {
 	background-color: var(--colorlivebalk);
 	white-space: nowrap;
 	overflow: hidden;
@@ -115,30 +154,78 @@ main nav ul {
 	overflow: scroll;
 }
 
-article {
+/* display grid structuur voor de artikels gemaakt met hulp van Sanne */
+
+main>ul {
+	display: grid;
+	gap: 1em;
+}
+
+main>ul li{
+	display: grid;
+	grid-template-columns: max-content 1fr;
+	grid-template-rows: min-content 1fr;
+	column-gap: 1em;
+}
+
+main>ul li h3 {
+	margin: 0;
+}
+	
+main>ul li p {
+	margin: 0;
+	grid-row-start: 1;
+}
+
+main>ul li img {
+	grid-column-start: 1;
+	grid-row-start: 1;
+	grid-row-end: 3;
+	width: 10em;
+}
+
+
+main>ul li:nth-of-type(1) {
+	grid-template-columns: unset;
+	grid-template-rows: unset;
 	background-color: var(--colortitlebalk);
 }
 
-article h3 {
-	color: var(--colorbackground);
-	font-size: large;
-}
-
-article img {
-	order: -1;
-}
-
-article p:first-of-type {
-	color: var(--colorlivebalk);
-	order: -1;
-}
-
-article p:nth-of-type(2) {
+main>ul li:nth-of-type(1) h3 {
+	grid-row-start: 3;
 	color: var(--colorbackground);
 }
-
-section p{
+	
+main>ul li:nth-of-type(1) p:first-of-type {
+	grid-row-start: 1;
 	color: var(--colortitlearound);
-	font-size: 3em;
 }
 
+main>ul li:nth-of-type(1) p:last-of-type {
+	grid-row-start: 4;
+	color: var(--colorbackground);
+}
+
+main>ul li:nth-of-type(1) img {
+	grid-column-start: unset;
+	grid-row-start: 2;
+	grid-row-end: unset;
+	width: 100%;
+}
+
+
+
+/********************/
+/* footer */
+/********************/
+
+footer div {
+	background-color: var(--colortitlebalk);
+}
+
+footer h1::before, a h1::after {
+	margin-left: 0.1em;
+	margin-right: 0.1em;
+	content: "/";
+	color: var(--colortitlearound);
+}

@@ -119,7 +119,7 @@ De kleuren zijn niet nodig om de pagina en de inhoud te begrijpen.
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
+  - pu
   - punt 2
   - nog een punt
   - ...
