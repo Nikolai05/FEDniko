@@ -119,8 +119,8 @@ De kleuren zijn niet nodig om de pagina en de inhoud te begrijpen.
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - pu
-  - punt 2
+  - H1 moet niet in header zijn normaal gesprokken.
+  - Minder navigatie menus namaken van echte site.
   - nog een punt
   - ...
 
@@ -133,7 +133,7 @@ De kleuren zijn niet nodig om de pagina en de inhoud te begrijpen.
 ## Voortgang 2 (week 3)
 
 <details>
-  <summary>uitwerken voor 2e voortgang</summary>
+  <summary>Ik heb sinds vorige week verder gewerkt aan mijn html en css. Ook heb ik jscript gebruikt om een burger menu te maken.</summary>
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
@@ -147,6 +147,13 @@ De kleuren zijn niet nodig om de pagina en de inhoud te begrijpen.
   | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
+
+
+- Ian wil besprekken over de structuur van zijn menu en wat hulp met zijn css.
+
+-
+
+
 
 
   ### Verslag van meeting
