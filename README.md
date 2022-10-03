@@ -12,7 +12,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Jij
 
-<details open>
+<details>
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Auteur:
@@ -32,7 +32,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Je website
 
-<details open>
+<details>
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
@@ -103,8 +103,7 @@ De kleuren zijn niet nodig om de pagina en de inhoud te begrijpen.
   <summary>uitwerken voor 1e voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
+  Ik weet niet hoe ik de scorebord moet namaken.
 
   ### Agenda voor meeting
   samen met je groepje opstellen
@@ -151,7 +150,9 @@ De kleuren zijn niet nodig om de pagina en de inhoud te begrijpen.
 
 - Ian wil besprekken over de structuur van zijn menu en wat hulp met zijn css.
 
--
+- Ik wil weten hoe ik de font kan gebruiken.
+
+- Ik wil ook weten hoe ik de knop van het hamburger menu kan laten veranderen.
 
 
 
@@ -159,9 +160,9 @@ De kleuren zijn niet nodig om de pagina en de inhoud te begrijpen.
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
+  - Ik moet verslagen van voortagangen.
+  - Ik weet hoe je een font in je css importeert. Bij een font 400 en 700 in beide italic en normal gebruiken.
+  - 
 - ...
 
 </details>
@@ -213,7 +214,7 @@ De kleuren zijn niet nodig om de pagina en de inhoud te begrijpen.
   <summary>uitwerken voor 3e voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Ik wil weten hoe ik sommige elementen van mijn html moet stijlen.
 
 
   ### Agenda voor meeting
