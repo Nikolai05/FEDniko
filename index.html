@@ -11,12 +11,15 @@
 </head>
 
 <body>
+	<button>Letters groter maken</button>
+	<button onclick="switchLight()">Toggle darkmode</button>
+	<a href="#main" class="skip">ga naar de hoofd inhoud</a>
 	<header>
 		<section>
 			<div>
-				<a href="index.html"><h1>mundodeportivo</h1></a>
-				<button></button>
-				<a href="#"><img src="images/iconprofile.png" alt=""></a>
+				<a href="index.html"><h1 aria-label="Mundodeportivo" >mundo <span>deportivo</span></h1></a>
+				<button aria-label="navigatie menu"> <img src="images/menuknop.PNG" alt="menu knop"></button>
+				<a href="#" aria-label="profiel" ><img src="images/iconprofile.png" alt="profiel icon"></a>
 			</div>
 			<nav>
 				<ul>
@@ -33,12 +36,17 @@
 		</section>
 		<nav>
 			<h2>Hoy interesa</h2>
-			<ul>
+			<marquee>
+				Alcaraz - Nadal - Barcelona - La liga - Champions League - Europa League
+			</marquee>
+			<!-- <ul>
 				<li><a href="#">Alcaraz</a></li>
 				<li><a href="#">Nadal</a></li>
 				<li><a href="#">Barcelona</a></li>
 				<li><a href="#">La liga</a></li>
-			</ul>
+				<li><a href="#">Champions League</a></li>
+				<li><a href="#">Europa League</a></li>
+			</ul> -->
 		</nav>
 		<nav>
 			<ul>
@@ -52,36 +60,36 @@
 		</nav>
 		<nav>
 			<ul>
-				<li><a href="#"><img src="images/almeria.png" alt=""></a></li>				
-				<li><a href="#"><img src="images/acb.png" alt=""></a></li>
-				<li><a href="#"><img src="images/atm.png" alt=""></a></li>
-				<li><a href="#"><img src="images/fcb.png" alt=""></a></li>
-				<li><a href="#"><img src="images/betis.png" alt=""></a></li>				
-				<li><a href="#"><img src="images/cadiz.png" alt=""></a></li>
-				<li><a href="#"><img src="images/celta.png" alt=""></a></li>
-				<li><a href="#"><img src="images/elche.png" alt=""></a></li>
-				<li><a href="#"><img src="images/esp.png" alt=""></a></li>
-				<li><a href="#"><img src="images/getafe.png" alt=""></a></li>
-				<li><a href="#"><img src="images/girona.png" alt=""></a></li>
-				<li><a href="#"><img src="images/rm.webp" alt=""></a></li>
-				<li><a href="#"><img src="images/mallorca.png" alt=""></a></li>
-				<li><a href="#"><img src="images/osasuna.png" alt=""></a></li>
-				<li><a href="#"><img src="images/rayo.png" alt=""></a></li>
-				<li><a href="#"><img src="images/RS.png" alt=""></a></li>
-				<li><a href="#"><img src="images/sevilla.png" alt=""></a></li>
-				<li><a href="#"><img src="images/valencia.png" alt=""></a></li>
-				<li><a href="#"><img src="images/valladolid.png" alt=""></a></li>
-				<li><a href="#"><img src="images/villareal.png" alt=""></a></li>
+				<li><a href="#"><img src="images/almeria.png" alt="logo van almeria voetbal club"></a></li>				
+				<li><a href="#"><img src="images/acb.png" alt="logo van athletic voetbal club"></a></li>
+				<li><a href="#"><img src="images/atm.png" alt="logo van atletico voetbal club"></a></li>
+				<li><a href="#"><img src="images/fcb.png" alt="logo van barcelona voetbal club"></a></li>
+				<li><a href="#"><img src="images/betis.png" alt="logo van betis voetbal club"></a></li>				
+				<li><a href="#"><img src="images/cadiz.png" alt="logo van cadiz voetbal club"></a></li>
+				<li><a href="#"><img src="images/celta.png" alt="logo van celta voetbal club"></a></li>
+				<li><a href="#"><img src="images/elche.png" alt="logo van elche voetbal club"></a></li>
+				<li><a href="#"><img src="images/esp.png" alt="logo van espanyol voetbal club"></a></li>
+				<li><a href="#"><img src="images/getafe.png" alt="logo van getafe voetbal club"></a></li>
+				<li><a href="#"><img src="images/girona.png" alt="logo van girona voetbal club"></a></li>
+				<li><a href="#"><img src="images/rm.webp" alt="logo van madrid voetbal club"></a></li>
+				<li><a href="#"><img src="images/mallorca.png" alt="logo van mallorca voetbal club"></a></li>
+				<li><a href="#"><img src="images/osasuna.png" alt="logo van osasuna voetbal club"></a></li>
+				<li><a href="#"><img src="images/rayo.png" alt="logo van vallecano voetbal club"></a></li>
+				<li><a href="#"><img src="images/RS.png" alt="logo van real sociedad voetbal club"></a></li>
+				<li><a href="#"><img src="images/sevilla.png" alt="logo van sevilla voetbal club"></a></li>
+				<li><a href="#"><img src="images/valencia.png" alt="logo van valencia voetbal club"></a></li>
+				<li><a href="#"><img src="images/valladolid.png" alt="logo van valladolid voetbal club"></a></li>
+				<li><a href="#"><img src="images/villareal.png" alt="logo van villareal voetbal club"></a></li>
 			</ul>
 		</nav>
 	</header>
-	<main>
-		<a href="#"><H2> <em>Futbol</em> Mercado de fichajes en directo</H2></a>
+	<main id="main">
+		<a href="#"><H2> <em>Futbol</em> Mercado de fichajes, en directo</H2></a>
 		<ul>
 			<li>
 				<a href="2depagina.html">
 					<h3>El Madrid-Barça apunta al domingo 16 de octubre a las 16.15 h. (DAZN)</h3>
-					<img src="images/1starticleimg.PNG" alt="">
+					<img src="images/1starticleimg.PNG" alt="albeelding van Lewandowski met Alaba">
 					<p>Noticia MD</p>
 					<p>Sergi Soler</p>
 				</a>
@@ -89,22 +97,22 @@
 			<li>
 				<h3>El Madrid-Barça apunta al domingo 16 de octubre a las 16.15 h. (DAZN)</h3>
 				<p>Noticia MD</p>
-				<img src="images/1starticleimg.PNG" alt="">
+				<img src="images/1starticleimg.PNG" alt="albeelding van Lewandowski met Alaba">
 			</li>
 			<li>
 				<h3>El Madrid-Barça apunta al domingo 16 de octubre a las 16.15 h. (DAZN)</h3>
 				<p>Noticia MD</p>
-				<img src="images/1starticleimg.PNG" alt="">
+				<img src="images/1starticleimg.PNG" alt="albeelding van Lewandowski met Alaba">
 			</li>
 		</ul>
 		<ul>
 			<li>
-				<img src="images/rm.webp" alt="">
+				<img src="images/rm.webp" alt="logo van real madrid">
 				<p>real madrid</p>
 				<p>2</p>
 			</li>
 			<li>
-				<img src="images/atm.png" alt="">
+				<img src="images/atm.png" alt="logo van atletico madrid">
 				<p>atletico madrid</p>
 				<p>1</p>
 			</li>

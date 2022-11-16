@@ -22,7 +22,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Blauw
 
   #### Je focus:
-  hier je focus (kies uit responsive óf surface plane)
+  Surface plane
  
 </details>
 
@@ -44,7 +44,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de tweede pagina (small screen):
   hier de naam van de pagina  
-  <img src="readme-images/" width="375px" alt="omschrijving van de pagina">
+  <img src="readme-images/2" width="375px" alt="Specifieke artikel pagina van de sport krant">
  
 </details>
 
@@ -160,7 +160,7 @@ De kleuren zijn niet nodig om de pagina en de inhoud te begrijpen.
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - Ik moet verslagen van voortagangen.
+  - Ik moet verslagen van voortgangen maken.
   - Ik weet hoe je een font in je css importeert. Bij een font 400 en 700 in beide italic en normal gebruiken.
   - 
 - ...
@@ -230,8 +230,8 @@ De kleuren zijn niet nodig om de pagina en de inhoud te begrijpen.
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
+  - Ervoor zorgen dat ik de surface plane elementen toe voeg.
+  - Ervoor zorgen dat ik de toegankelijkheids test doe.
   - nog een punt
   - ...
 
@@ -247,19 +247,21 @@ De kleuren zijn niet nodig om de pagina en de inhoud te begrijpen.
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/caracteristiek" width="375px" alt="uitkomst header">
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  Ik heb geleerd hoe een dark mode/ light mode toggle knop maakt. Ook hoe ik letter grote kan aanpassen bij de hele body 
+  met enkel een knop en hoe je en link maakt die een sectie kan overslaan.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  <img src="readme-images/geleerd" width="375px" alt="knopen voor lettergrote en dark mode toggle">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  Het scorebord was niet helemaal gelukt zoals gewenst. De iconen van de teams staan niet helemaal op de juiste
+  positie. 
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  <img src="readme-images/nietgelukt" width="375px" alt="afbeelding van scorebord">
 </details>
 
 

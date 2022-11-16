@@ -1,3 +1,20 @@
+/* Fonts */
+
+@font-face {
+	font-family: "Notosans";
+	src: url(../fonts/NotoSans-Regular.ttf) format(truetype);
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Notosansbold";
+	src: url(../fonts/NotoSans-Bold.ttf) format(truetype);
+	font-weight: bold;
+	font-style: bold;
+}
+
+
 /* custom properties */
 
 :root {
@@ -5,59 +22,117 @@
 	--colortitlebalk: black;
 	--colorlivebalk: yellow;
 	--colortitlearound: red;
+	--colornav: lightgray;
+	--colortitleh3: rgb(106, 106, 106);
+	--colormenu: rgb(234, 234, 234);
+}
+
+/* Knop om letter grotte aan te passen */
+
+
+html.grote-letters {
+	font-size:1.5em;
 }
 
 /* Styling voor hele body */
 
 body {
+	font-family: "Notosans";
 	background-color: var(--colorbackground);
 	margin: 0;
 }
+
 
 a {
 	text-decoration: none;
 	color: inherit;
 }
 
-/* alle navigatie (goed naakijken) */
-
-nav ul {
-	display: flex;
-	text-decoration: none;
-	justify-content: space-between;
-	flex-grow: 1;
-	background-color: aliceblue;
-	margin: 0;
-	padding: 0;
+button:hover {
+	cursor: pointer;	
 }
 
 
+/* knop voor dark mode */
 
+.dark-mode {
+	background-color: var(--colortitlebalk);
+	color: var(--colorbackground);
+}
+
+
+/* Skip link na hoofinhoud. Bron:https://www.w3schools.com/accessibility/accessibility_skip_links.php */
+
+
+.skip {
+	/* position: absolute; */
+	left: -10000px;
+	top: auto;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	color: var(--colortitlearound);
+}
+
+.skip:focus {
+	position: static;
+	width: auto;
+	height: auto;
+}
 
 
 /**********/
 /* header */
 /**********/
 
+
 header {
 	display: flex;
 	flex-direction:column;
 }
 
+
+
 /* header>section */
 
 header section nav ul{
+	background-color: var(--colormenu);
 	display: block;
-	margin-top: 7em;
+	margin-top: 10em;
 	position: fixed;
 	inset: 0;
 	transform: translateX(-100%);
 	list-style: none;
 }
 
+header section nav ul li{
+	color: var(--colortitlearound);
+	margin-top: 1em;
+	margin-bottom: 1em;
+	font-size: larger;
+	font-weight: bold;
+}
+
+header section nav button{
+	background-color: var(--colorlivebalk);
+	padding: 1em;
+	margin-bottom: 1em;
+	border-style: none;
+	width: 20em;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+header section nav input {
+	width: 25em;
+	height: 2em;
+}
+
 header section nav ul.openMenu {
 	transform: translateX(0);
 }
+
+
 
 /* header>section>div */
 
@@ -76,8 +151,8 @@ header section div a:nth-of-type(2) {
 }
 
 header section div a img {
-	width: 3em;
-    height: 3em; 
+	width: 1.5em;
+    height: 1.5em; 
 }
 
 header div button {
@@ -85,15 +160,22 @@ header div button {
 	border-style: none;
 	width: 3.5em;
 	height: 3.5em;
-    background-image:url(../images/menuknop.PNG);
+    /* background-image:url(../images/menuknop.PNG); */
 }
+
+
 
 /* Titel pagina */
 
 h1 {
 	color: var(--colorlivebalk);
 	font-size: 1.5em;
+	font-family: "Notosansbold";
 	text-transform: uppercase;
+}
+
+span {
+	color: var(--colorbackground)
 }
 
 em {
@@ -110,6 +192,7 @@ section h1::before, section h1::after {
 }
 
 
+
 /* Navigatie buiten section */
 
 header > nav:first-of-type{
@@ -119,6 +202,23 @@ header > nav:first-of-type{
 	display: flex;
 	align-items: center;
 	gap: 1em;
+	font-size: small;
+	margin-left: 1em;
+}
+
+header > nav:first-of-type ul{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	overflow: scroll;
+	white-space: nowrap;
+	overflow: scroll;
+	text-overflow: ellipsis;
+}
+
+header > nav:first-of-type ul li{
+	margin-left: 1em;
+	margin-right: 0.5em;
 }
 
 header > nav:first-of-type a:hover {
@@ -127,10 +227,47 @@ header > nav:first-of-type a:hover {
 
 header > nav:first-of-type h2 {
 	font-size: 1em;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+header>nav:nth-of-type(2) ul{
+	background-color: var(--colornav);
+	margin: 0;
+	padding: 0;
+	display: flex;
+	overflow: scroll;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+header>nav:nth-of-type(2) li {
+	margin:1em;
+}
+
+header>nav:nth-of-type(2) li:first-of-type {
+	list-style: none;
+}
+
+header>nav:nth-of-type(2) a {
+	text-transform: uppercase;
 }
 
 header > nav:nth-of-type(3) ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
 	list-style: none;
+	overflow: scroll;
+}
+
+header>nav:nth-of-type(3) li {
+	margin: 1em;
+}
+
+header>nav:nth-of-type(3) img {
+	width: 2em;
+	height: 2em;
 }
 
 
@@ -139,29 +276,89 @@ header > nav:nth-of-type(3) ul {
 /* main */
 /********************/
 
+main article {
+	margin: 1em;
+}
 
+main article ul:nth-of-type(1) {
+	display: flex;
+	flex-direction: column;
+	padding-left: 0;
+	border-bottom: var(--colortitlearound);
+	border-bottom-style: dotted;
+}
+
+main article li {
+	list-style: none;
+}
+
+main article ul:nth-of-type(1) li:nth-of-type(2){
+	order: -1;
+	border-top: var(--colortitlearound);
+}
+
+main article h2 {
+	font-size: 1.5em;
+}
+
+main article h3 {
+	color: var(--colortitlearound);
+	text-transform: uppercase;
+	margin: 0%;
+}
+
+main article p {
+	font-size: larger;
+}
 
 main a h2 {
 	background-color: var(--colorlivebalk);
 	white-space: nowrap;
 	overflow: hidden;
 	padding: 1em 0.5em 1em 0.5em;
+	font-size: 1em;
 }
 
-main nav ul {
-	display: flex;
-	list-style: none;
-	overflow: scroll;
+
+main article ul:nth-of-type(2) {
+	padding-left: 0;
+}
+
+main article ul:nth-of-type(2) li:first-of-type {
+	border-radius: 50%;
+	background-color: var(--colortitlearound);
+	height: 0.7em;
+	width: 0.7em;
+}
+
+main article ul:nth-of-type(3) {
+	display: grid;
+	padding-left: 0%;
+}
+
+main article ul:nth-of-type(3) li:nth-of-type(2) {
+	grid-column-start: 2;
+	grid-row-start: 1;
+	font-size: large;
+}
+
+main article ul:nth-of-type(3) li:nth-of-type(3) {
+	grid-column-start: 2;
+	grid-row-start: 1;
+	margin-top: 2em;
 }
 
 /* display grid structuur voor de artikels gemaakt met hulp van Sanne */
 
 main>ul {
+	border-top: 1px solid var(--colortitlebalk);
 	display: grid;
 	gap: 1em;
+	padding:0;
 }
 
 main>ul li{
+	border-top: 1px solid var(--colornav);
 	display: grid;
 	grid-template-columns: max-content 1fr;
 	grid-template-rows: min-content 1fr;
@@ -185,34 +382,122 @@ main>ul li img {
 }
 
 
-main>ul li:nth-of-type(1) {
+main>ul:nth-of-type(1) li:nth-of-type(1) {
 	grid-template-columns: unset;
 	grid-template-rows: unset;
-	background-color: var(--colortitlebalk);
+	background-color: var(--colortitleh3);
 }
 
-main>ul li:nth-of-type(1) h3 {
+main>ul:nth-of-type(1) li:nth-of-type(1) a{
+	display: grid;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+main>ul:nth-of-type(1) li:nth-of-type(1) h3 {
 	grid-row-start: 3;
 	color: var(--colorbackground);
 }
 	
-main>ul li:nth-of-type(1) p:first-of-type {
+main>ul:nth-of-type(1) li:nth-of-type(1) p:first-of-type {
 	grid-row-start: 1;
 	color: var(--colortitlearound);
 }
 
-main>ul li:nth-of-type(1) p:last-of-type {
+main>ul:nth-of-type(1) li:nth-of-type(1) p:last-of-type {
 	grid-row-start: 4;
 	color: var(--colorbackground);
 }
 
-main>ul li:nth-of-type(1) img {
+main>ul:nth-of-type(1) li:nth-of-type(1) img {
 	grid-column-start: unset;
 	grid-row-start: 2;
 	grid-row-end: unset;
 	width: 100%;
+	margin-top: 1em;
+	margin-bottom: 1em;
 }
 
+main>ul:nth-of-type(1) li:nth-of-type(2) {
+	margin: 1em;
+}
+
+main>ul:nth-of-type(1) li:nth-of-type(3) {
+	margin: 1em;
+}
+
+
+/* scorebord */
+
+main>ul:nth-of-type(2) {
+		margin:0;
+		list-style:none;
+		padding:.5em;
+		display:flex;
+		flex-grow: 1;
+		background-color: var(--colortitleh3)
+}
+
+main>ul:nth-of-type(2) li {
+	display:flex;
+	flex-basis:50%;
+	align-items:center;
+	position: relative;
+}
+
+main>ul:nth-of-type(2) li:nth-of-type(1){
+	justify-content:right;	
+}
+
+main>ul:nth-of-type(2) li:nth-of-type(2){
+	flex-direction:row-reverse;
+	justify-content:start;
+}
+
+main>ul:nth-of-type(2) li p {
+	margin: 0;
+	color: var(--colorbackground);
+
+}
+
+main>ul:nth-of-type(2) li p:nth-of-type(2) {
+	font-size:2em;
+	padding:1em;
+}
+
+main>ul:nth-of-type(2) li img{
+	width: 2em;
+	height: 2em;
+	align-self: start;
+}
+
+
+/* Navigatie en links onderaan pagina */
+
+
+main>ul:nth-of-type(3) h3{
+	margin-left: 1em;
+	font-size: larger;
+	text-transform: uppercase;
+	color: var(--colortitleh3);
+}	
+
+main>ul:nth-of-type(3) a{
+	margin-left: 1em;
+	font-size: larger;
+}
+
+main>ul:last-of-type h3{
+	margin-left: 1em;
+	font-size: larger;
+	text-transform: uppercase;
+	color: var(--colortitleh3);
+}
+
+main>ul:last-of-type a {	
+	color: var(--colortitlearound);
+	margin-left: 1em;
+}
 
 
 /********************/
@@ -221,6 +506,7 @@ main>ul li:nth-of-type(1) img {
 
 footer div {
 	background-color: var(--colortitlebalk);
+	display: flex;
 }
 
 footer h1::before, a h1::after {
@@ -228,4 +514,8 @@ footer h1::before, a h1::after {
 	margin-right: 0.1em;
 	content: "/";
 	color: var(--colortitlearound);
+}
+
+footer div a {
+	justify-content: center;
 }
