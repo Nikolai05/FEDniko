@@ -11,9 +11,12 @@
 </head>
 
 <body>
-    <button>Letters groter maken</button>
-	<button>Toggle darkmode</button>
     <header>
+        <section>
+			<button>Aa</button>
+			<button onclick="switchLight()">&#9790</button>
+			<button><a href="#main" class="skip">ga naar de hoofd inhoud</a></button>
+		</section>
         <section>
             <div>
                 <a href="index.html"><h1 aria-label="Mundodeportivo" >mundo <span>deportivo</span></h1></a>
@@ -46,28 +49,18 @@
     <main>
         <a href="#"><H2> <em>Futbol</em> Mercado de fichajes en directo</H2></a>
         <article>
-            <ul>
-                <li><h2>El Madrid-Barça apunta al domingo 16 de octubre a las 16.15 h. (DAZN)</h2></li>
-                <li><h3>noticia md</h3>  </li>
-            </ul>
-            <ul>
-                <li></li>
-                <li><p>A falta de confirmación por parte de LaLiga, el primer Clásico liguero se 
-                    mantendrá en el horario de tarde para favorecer la audiencia asiática</p>
-                </li>
-            </ul>
+            <header>
+                <h2>El Madrid-Barça apunta al domingo 16 de octubre a las 16.15 h. (DAZN)</h2>
+                <h3>noticia md</h3>  
+            </header>
+            <p>A falta de confirmación por parte de LaLiga, el primer Clásico liguero se 
+            mantendrá en el horario de tarde para favorecer la audiencia asiática</p>
             <img src="images/1starticle2.PNG" alt="foto artikel">
-            <ul>
-                <li>
-                    <img src="images/Schrijverartikel.PNG" alt="foto van schrijver van het artikel">
-                </li>
-                <li>
-                    <p>Jordi Batalla</p>
-                </li>
-                <li>
-                    <p>Periodista</p>
-                </li>
-            </ul>
+            <div>   
+                <p>Jordi Batalla</p>
+                <p>Periodista</p>
+                <img src="images/Schrijverartikel.PNG" alt="foto van schrijver van het artikel">    
+            </div>
             <p>David Alaba y Robert Lewandowski se verán las caras el domingo 16 de octubre en el Santiago Bernabéu</p>
             <p>A falta de confirmación oficial por parte de LaLiga y según ha podido saber Mundo Deportivo, todo apunta 
                 que el Real Madrid-FC Barcelona de la novena jornada liguera se disputará el domingo 16 de octubre en el 
@@ -90,7 +83,7 @@
     </main>
     <footer>
         <div>
-			<a href="index.html"><h1>mundodeportivo</h1></a>
+			<a href="index.html"><h1 aria-label="Mundodeportivo" >mundo <span>deportivo</span></h1></a>
 		</div>
 		<p>
 			Mundodeportivo. Todos los derechos reservados

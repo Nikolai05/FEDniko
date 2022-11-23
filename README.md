@@ -105,7 +105,7 @@ De kleuren zijn niet nodig om de pagina en de inhoud te begrijpen.
   ### Stand van zaken
   Ik weet niet hoe ik de scorebord moet namaken.
 
-  ### Agenda voor meeting
+  ### Agenda voor meeting  (ontbreekt)
   samen met je groepje opstellen
 
   | student 1      | student 2          | student 3    | student 4        |
@@ -138,7 +138,7 @@ De kleuren zijn niet nodig om de pagina en de inhoud te begrijpen.
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
 
-  ### Agenda voor meeting
+  ### Agenda voor meeting  (ontbreekt)
   samen met je groepje opstellen
 
   | student 1      | student 2          | student 3    | student 4        |
@@ -171,7 +171,7 @@ De kleuren zijn niet nodig om de pagina en de inhoud te begrijpen.
 
 
 
-## Toegankelijkheidstest 2/2 (week 4)
+## Toegankelijkheidstest 2/2 (week 4) (ontbreekt)
 
 <details>
   <summary>uitwerken na test in 8e werkgroep</summary>
@@ -180,27 +180,20 @@ De kleuren zijn niet nodig om de pagina en de inhoud te begrijpen.
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
   #### Screenreader
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  Door te zorgen dat er gemakkelijk kan genavigeerd worden door de kopjes en linkjes.
 
 
   #### Muis en Toetsenbord 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  Button states toegevoegd (hover,focus)
+  Skip naar inhoud knop toevoegen.
 
 
   #### Motoriek (shocks, elastiekjes)
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  Niet toegepast.
 
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  Niet toegepast.
 
 </details>
 
